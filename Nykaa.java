@@ -20,6 +20,8 @@ public class Nykaa {
 		Actions builder=new Actions(driver);
 		builder.moveToElement(Brands).perform();
 		driver.findElement(By.xpath("(//div[@class=\"css-ov2o3v\"]/a)[6]")).click();
+		String text=driver.findElement(By.tagName("h1")).getText();
+		System.out.println(text);
 		
 	}
 
